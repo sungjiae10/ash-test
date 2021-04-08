@@ -1,17 +1,77 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ash-test</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <script src="/js/vue.min.js"></script>
+
   </head>
   <body>
-    <h1>ash-test</h1>
-    <ul>
-      <li>
-        <a href="#">
-          흠...
-        </a>
-      </li>
-    </ul>
+    
+    <div id="test" class="thumbnail-wrap">
+      <ul>
+        <li>
+          <div class="thumbnail-wrapper">
+            <div class="thumbnail">
+              <div class="thumbnail-centered">
+                <img class="thumbnail-img" src="https://img8.yna.co.kr/etc/inner/KR/2020/07/29/AKR20200729073100005_01_i_P4.jpg"/>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="thumbnail-wrapper">
+            <div class="thumbnail">
+              <div class="thumbnail-centered">
+                <img class="thumbnail-img" src="https://img8.yna.co.kr/etc/inner/KR/2020/07/29/AKR20200729073100005_01_i_P4.jpg"/>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="thumbnail-wrapper">
+            <div class="thumbnail">
+              <div class="thumbnail-centered">
+                <img class="thumbnail-img" src="https://img8.yna.co.kr/etc/inner/KR/2020/07/29/AKR20200729073100005_01_i_P4.jpg"/>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="thumbnail-wrapper">
+            <div class="thumbnail">
+              <div class="thumbnail-centered">
+                <img class="thumbnail-img" src="https://img8.yna.co.kr/etc/inner/KR/2020/07/29/AKR20200729073100005_01_i_P4.jpg"/>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="thumbnail-wrapper">
+            <div class="thumbnail">
+              <div class="thumbnail-centered">
+                <img class="thumbnail-img" src="https://img8.yna.co.kr/etc/inner/KR/2020/07/29/AKR20200729073100005_01_i_P4.jpg"/>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+      <script>
+        var test = new Vue({
+          el: '#myApp',
+          data: {
+            MyItems: [
+              { id: 1, name: 'web' },
+              { id: 2, name: 'is' },
+              { id: 3, name: 'free' }
+            ]
+          }
+        });
+      </script>
   </body>
 </html>
